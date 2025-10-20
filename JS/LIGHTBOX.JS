@@ -8,8 +8,8 @@
   LightboxOptions = (function() {
 
     function LightboxOptions() {
-      this.fileLoadingImage = 'images/loading.gif';
-      this.fileCloseImage = 'images/close.png';
+      this.fileLoadingImage = 'IMAGES/LOADING.GIF';
+      this.fileCloseImage = 'IMAGES/CLOSE.PNG';
       this.resizeDuration = 700;
       this.fadeDuration = 500;
       this.labelImage = "Image";
@@ -216,7 +216,7 @@
       $lightbox.find('.lb-image').fadeIn('slow');
       this.updateNav();
       this.updateDetails();
-      this.preloadNeighboringImages();
+      this.preloadNeighboringIMAGES();
       this.enableKeyboardNav();
     };
 
@@ -248,7 +248,7 @@
       });
     };
 
-    Lightbox.prototype.preloadNeighboringImages = function() {
+    Lightbox.prototype.preloadNeighboringIMAGES = function() {
       var preloadNext, preloadPrev;
       if (this.album.length > this.currentImageIndex + 1) {
         preloadNext = new Image;
